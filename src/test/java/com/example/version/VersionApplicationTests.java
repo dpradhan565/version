@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class VersionApplicationTests {
 
-	public static Logger logger = LoggerFactory.getLogger(VersionApplication.class); 
+	public static Logger logger = LoggerFactory.getLogger(VersionApplicationTests.class); 
 	
 	@Test
 	void contextLoads() {
