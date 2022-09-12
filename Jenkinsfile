@@ -11,6 +11,15 @@ pipeline{
                 bat "mvn versions:update-properties"
             }
         }
+          stage("Push"){
+            steps{
+              
+                bat '''git add .
+                git commit -m "push to git"
+                git push --set-upstream origin master'''
+                
+            }
+        }
         
     }
 }
