@@ -8,18 +8,10 @@ pipeline{
         }
         stage("Update Properties"){
             steps{
-                bat "mvn versions:update-properties"
+                bat "mvn versions:property-updates-report"
             }
         }
-          stage("Push"){
-            steps{
-              
-                bat '''git add .
-                git commit -m "push to git"
-                git push --set-upstream origin master'''
-                
-            }
-        }
+         
         
     }
 }
